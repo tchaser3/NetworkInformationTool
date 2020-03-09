@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IPAddressesDataSet" targetNamespace="http://tempuri.org/IPAddressesDataSet.xsd" xmlns:mstns="http://tempuri.org/IPAddressesDataSet.xsd" xmlns="http://tempuri.org/IPAddressesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IPAddressesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IPAddressesDataSet" msprop:Generator_UserDSName="IPAddressesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ipaddress" msprop:Generator_TableClassName="ipaddressDataTable" msprop:Generator_TableVarName="tableipaddress" msprop:Generator_RowChangedName="ipaddressRowChanged" msprop:Generator_TablePropName="ipaddress" msprop:Generator_RowDeletingName="ipaddressRowDeleting" msprop:Generator_RowChangingName="ipaddressRowChanging" msprop:Generator_RowEvHandlerName="ipaddressRowChangeEventHandler" msprop:Generator_RowDeletedName="ipaddressRowDeleted" msprop:Generator_RowClassName="ipaddressRow" msprop:Generator_UserTableName="ipaddress" msprop:Generator_RowEvArgName="ipaddressRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransactionID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address" type="xs:string" />
+              <xs:element name="Success" msprop:Generator_ColumnVarNameInTable="columnSuccess" msprop:Generator_ColumnPropNameInRow="Success" msprop:Generator_ColumnPropNameInTable="SuccessColumn" msprop:Generator_UserColumnName="Success" type="xs:string" />
+              <xs:element name="HostName" msprop:Generator_ColumnVarNameInTable="columnHostName" msprop:Generator_ColumnPropNameInRow="HostName" msprop:Generator_ColumnPropNameInTable="HostNameColumn" msprop:Generator_UserColumnName="HostName" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ipaddress" />
+      <xs:field xpath="mstns:TransactionID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
